@@ -60,7 +60,7 @@ export default {
     async signUp() {
       let result = await axios.post(
         ////added local host March 23 2024
-        `http://localhost:5000/tutor/user`,
+        `https://tutormodule-mevn-stack.onrender.com/tutor/user`,
         {
           name: this.name,
           email: this.email,

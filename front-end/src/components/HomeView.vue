@@ -85,7 +85,7 @@ export default{
         
     },
     async created(){
-        const response = await axios.get(`http://localhost:5000/tutor/count/${localStorage.getItem('userId')}`);
+        const response = await axios.get(`https://tutormodule-mevn-stack.onrender.com/tutor/count/${localStorage.getItem('userId')}`);
         this.count = response.data.count
         this.percent = ((this.count*100)/30).toFixed(2)
     }

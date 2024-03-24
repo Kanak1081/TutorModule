@@ -45,7 +45,7 @@ export default{
     methods: {
             deleteCourse(){
                 ////added local host March 23 2024
-                let apiURL = `http://localhost:5000/tutor/delete-course/${this.$route.params.id}`;
+                let apiURL = `https://tutormodule-mevn-stack.onrender.com/tutor/delete-course/${this.$route.params.id}`;
                 
                 axios.delete(apiURL, this.course).then((res) => {
                     alert("Course Deleted Successfully!!")

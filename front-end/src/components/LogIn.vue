@@ -47,7 +47,7 @@ export default {
     methods:{
         async login(){
             ////added local host March 23 2024
-            let result = await axios.post(`http://localhost:5000/tutor/login`,{
+            let result = await axios.post(`https://tutormodule-mevn-stack.onrender.com/tutor/login`,{
                 email:this.email,
                 password:this.password
             })

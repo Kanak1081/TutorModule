@@ -45,7 +45,7 @@ export default{
     },
     //added local host March 23 2024
     async created(){
-        const response = await axios.get(`http://localhost:5000/tutor/view-courses/${localStorage.getItem('userId')}`)
+        const response = await axios.get(`https://tutormodule-mevn-stack.onrender.com/tutor/view-courses/${localStorage.getItem('userId')}`)
         this.courses = response.data.courses
         console.log(this.courses)
         

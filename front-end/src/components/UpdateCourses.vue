@@ -53,7 +53,7 @@ export default{
     methods: {
         handleUpdateForm() {
             ////added local host March 23 2024
-            let apiURL = `http://localhost:5000/tutor/update-course/${this.$route.params.id}`;
+            let apiURL = `https://tutormodule-mevn-stack.onrender.com/tutor/update-course/${this.$route.params.id}`;
 
             axios.post(apiURL, this.course).then((res) => {
                 alert("Course Updated Successfully!!")

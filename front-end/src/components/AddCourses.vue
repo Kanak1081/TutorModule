@@ -58,7 +58,7 @@ export default{
     methods:{  
         addCourse(){
             ////added local host March 23 2024
-            axios.post(`http://localhost:5000/tutor/add-course/${localStorage.getItem('userId')}`,{
+            axios.post(`https://tutormodule-mevn-stack.onrender.com/tutor/add-course/${localStorage.getItem('userId')}`,{
                 //userId:this.course.userId,
                 name:this.course.name,
                 description:this.course.description,
